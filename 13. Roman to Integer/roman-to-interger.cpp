@@ -15,8 +15,8 @@ public:
         int res = 0;
         for (int i = 0; i < s.length(); i++) {
             if (i + 1 < s.length()){
-                if (value(s[i]) < value(s[i + 1])) {
-                    res += value(s[i + 1]) - value(s[i]);
+                if (value(s[i]) < value(s[i + 1])) {  
+                    res += value(s[i + 1]) - value(s[i]); // ยาวเหมือนจมูกยื่นออกมาไหมละ? 
                     i++;
                 } else {
                     res += value(s[i]);
